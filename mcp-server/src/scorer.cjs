@@ -1,7 +1,7 @@
 /*
  * GenuineReviewsOnly – review authenticity scorer.
  *
- * Pure, dependency-free heuristics. Works in browsers (window.GRO) and Node
+ * Pure, dependency-free heuristics. Works in Node (module.exports) and browsers (window.GRO)
  * (module.exports). Each review gets a 0..1 "suspicion" score plus the list
  * of reasons that contributed, so users can see *why* something was hidden.
  *

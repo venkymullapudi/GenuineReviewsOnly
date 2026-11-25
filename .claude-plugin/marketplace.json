@@ -1,0 +1,14 @@
+{
+  "name": "genuine-reviews-only",
+  "owner": {
+    "name": "venkymullapudi"
+  },
+  "description": "Remove fake reviews and keep only the genuine ones, in Claude or ChatGPT.",
+  "plugins": [
+    {
+      "name": "genuine-reviews-only",
+      "source": "./plugin",
+      "description": "Remove fake reviews from any product link or pasted reviews and keep only the genuine ones."
+    }
+  ]
+}
