@@ -4,6 +4,7 @@
   "description": "MCP server that removes likely fake reviews and keeps genuine ones. Works with Claude and ChatGPT.",
   "type": "module",
   "private": true,
+  "license": "Apache-2.0",
   "scripts": {
     "build": "esbuild src/server.mjs --bundle --platform=node --format=esm --target=node18 --minify --outfile=../plugin/server/genuine-reviews.mjs --banner:js=\"import{createRequire as __cr}from'module';const require=__cr(import.meta.url);\"",
     "start": "node ../plugin/server/genuine-reviews.mjs",

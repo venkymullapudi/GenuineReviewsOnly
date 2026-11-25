@@ -100,3 +100,7 @@ node --test test/*.test.js test/*.test.mjs
 ```
 
 `npm run build` regenerates `plugin/server/genuine-reviews.mjs`, the bundled file that users run. Rebuild and commit it after changing anything in `mcp-server/src/`.
+
+## License
+
+[Apache License 2.0](LICENSE)

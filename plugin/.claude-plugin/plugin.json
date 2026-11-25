@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Give Claude a product link or pasted reviews and get back only the genuine ones. Fake, paid and incentivised reviews are removed, with reasons.",
   "author": { "name": "venkymullapudi" },
+  "license": "Apache-2.0",
   "homepage": "https://github.com/venkymullapudi/GenuineReviewsOnly",
   "repository": "https://github.com/venkymullapudi/GenuineReviewsOnly",
   "keywords": ["reviews", "fake reviews", "shopping", "mcp"]
