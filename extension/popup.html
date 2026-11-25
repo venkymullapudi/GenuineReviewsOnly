@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { font: 14px/1.4 system-ui, sans-serif; width: 240px; margin: 12px; color: #10261a; }
+  h1 { font-size: 15px; margin: 0 0 10px; }
+  label { display: block; margin: 8px 0; }
+  select { width: 100%; padding: 4px; }
+  p { color: #555; font-size: 12px; }
+</style>
+</head>
+<body>
+  <h1>GenuineReviewsOnly</h1>
+  <label><input type="checkbox" id="enabled"> Hide suspicious reviews</label>
+  <label>Strictness
+    <select id="strictness">
+      <option value="relaxed">Relaxed – hide only obvious fakes</option>
+      <option value="normal">Normal</option>
+      <option value="strict">Strict – hide anything doubtful</option>
+    </select>
+  </label>
+  <p>Open any product page and scroll to its reviews. A badge at the bottom-right shows how many were hidden.</p>
+  <script src="popup.js"></script>
+</body>
+</html>

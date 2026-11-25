@@ -1,0 +1,17 @@
+.gro-suspicious:not(.gro-revealed) { display: none !important; }
+.gro-suspicious.gro-revealed { opacity: .55; outline: 2px dashed #d9534f; outline-offset: 4px; }
+.gro-note {
+  font: 600 12px/1.4 system-ui, sans-serif; color: #fff; background: #d9534f;
+  padding: 4px 8px; border-radius: 4px; margin-bottom: 6px;
+}
+#gro-panel {
+  position: fixed; right: 16px; bottom: 16px; z-index: 2147483647;
+  display: flex; gap: 8px; align-items: center;
+  font: 13px/1.3 system-ui, sans-serif; color: #10261a; background: #e8f7ee;
+  border: 1px solid #2e8b57; border-radius: 8px; padding: 8px 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.18);
+}
+#gro-panel button {
+  font: inherit; cursor: pointer; border: 1px solid #2e8b57; background: #fff;
+  color: #10261a; border-radius: 6px; padding: 3px 8px;
+}
