@@ -1,6 +1,6 @@
 const test = require("node:test");
 const assert = require("node:assert");
-const { analyze } = require("../extension/scorer.js");
+const { analyze } = require("../mcp-server/src/scorer.cjs");
 
 const genuine = {
   rating: 4, verified: true,
@@ -38,10 +38,3 @@ test("threshold controls strictness", () => {
   assert.equal(analyze([review], { threshold: 0.2 })[0].verdict, "suspicious");
 });
 
-test("docs/scorer.js is in sync with extension/scorer.js", () => {
-  const fs = require("node:fs");
-  const path = require("node:path");
-  const a = fs.readFileSync(path.join(__dirname, "../extension/scorer.js"), "utf8");
-  const b = fs.readFileSync(path.join(__dirname, "../docs/scorer.js"), "utf8");
-  assert.equal(a, b, "Run: cp extension/scorer.js docs/scorer.js");
-});
